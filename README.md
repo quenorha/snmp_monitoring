@@ -18,9 +18,10 @@ It can be extended by adding other OID and the corresponding panels in the Grafa
 ## Requirements
 
 You need : 
-- an InfluxDB container called c_influxdb
+- an InfluxDB container called "c_influxdb"
 - a Grafana Container
 	They should both run in a network called "wago" (--net=wago)
+	
 	On a fresh install you can use WAGO Provisioning Tool : https://github.com/quenorha/wpt
 	On an Edge computer : https://github.com/quenorha/mtig_edge
 
