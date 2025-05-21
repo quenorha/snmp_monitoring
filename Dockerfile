@@ -12,7 +12,7 @@ RUN export  DEBIAN_FRONTEND=noninteractive && \
      sed -i '/non-free/d' /etc/apt/sources.list && \
      echo "deb http://httpredir.debian.org/debian ${DEBIAN_RELEASE} main contrib non-free"  >> /etc/apt/sources.list && \
      echo "deb http://httpredir.debian.org/debian ${DEBIAN_RELEASE}-updates main contrib non-free"  >> /etc/apt/sources.list && \
-     echo "deb http://security.debian.org ${DEBIAN_RELEASE}/updates main contrib non-free"  >> /etc/apt/sources.list && \
+     echo ""deb http://security.debian.org/debian-security ${DEBIAN_RELEASE}-security main contrib non-free"  >> /etc/apt/sources.list && \
     set -x &&\
     apt-get update && \
     apt-get -y install snmp-mibs-downloader && \
